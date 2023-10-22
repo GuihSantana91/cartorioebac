@@ -134,7 +134,8 @@ int main () // início da função
 		printf("Escolha a opção desejada do menu:\n\n"); // mensagem de exposição a primeira interação com o usuário
 		printf("\t1 - Incluir Registros\n");
 		printf("\t2 - Consultar Registros\n");
-		printf("\t3 - Deletar Registros\n\n");
+		printf("\t3 - Deletar Registros\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Digite a opção desejada: "); //fim do menu
 	
 	
@@ -154,6 +155,11 @@ int main () // início da função
 			
 			case 3:
 			deletar (); //chamada de funções
+			break;
+			
+			case 4:
+			printf ("Até logo!\n");
+			return 0;
 			break;
 			
 			default: //apresenta o que sistema fará em caso caso de não verdadeiro
